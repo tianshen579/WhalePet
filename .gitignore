@@ -1,0 +1,50 @@
+# 构建产物
+build/
+app/build/
+*.apk
+*.aab
+*.ap_
+*.dex
+classes/
+
+# 签名密钥 —— 绝不入库
+*.keystore
+*.jks
+local.properties
+
+# 构建脚本下载的中间件（体积大，由脚本按需获取）
+r8.jar
+android-all.jar
+framework35.apk
+framework35.arsc
+
+# 工具链
+.gradle/
+gradle/
+!gradle.properties
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# 系统
+.DS_Store
+Thumbs.db
+
+# Local secrets and runtime data
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+key.properties
+keystore.properties
+*.log
+.pet-chat-session
+
+# Private development conversation and handoff notes
+/docs/screenshots/overview.png
+/docs/DSH-HANDOFF.md

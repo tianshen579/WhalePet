@@ -1,0 +1,42 @@
+MIT License
+
+Copyright (c) 2026 zhang
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+## 美术资源说明
+
+本许可证**只覆盖代码**。
+
+角色立绘与动作素材（`app/src/main/assets/idle.png`、`app/src/main/assets/actions.png`
+及其衍生素材）是使用网络上的 AI 绘图工具生成的。
+
+需要留意的是：**AI 生成内容的著作权归属在各法域下并不明确**，多数平台也声明
+不保证生成内容的权利。因此这些素材**没有附带你（或任何人）可以授予的明确授权**。
+
+如果你要把本项目用于商业用途，或者希望下游使用者能放心复用这些素材，建议：
+
+- 换成你有明确授权的美术资源，或
+- 自行重绘 / 委托绘制，或
+- 在仓库里单独放一个 `ASSETS-LICENSE` 说明素材来源与你的意愿
+
+如果你只是想把它当作个人项目开源、不介意别人怎么用这些图，那么保持现状也可以 ——
+但请在 issue 里对素材复用请求明确表态。

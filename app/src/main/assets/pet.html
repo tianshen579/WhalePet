@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>小鲸鱼的口袋海洋</title><link rel="stylesheet" href="pet.css"></head>
+<body>
+<main id="app">
+  <header><div class="eyebrow">WHALE COMPANION · 互动演示</div><h1>口袋里的一片海</h1><p>摸摸头，喂一口白米饭，让小鲸鱼陪你一会儿。</p></header>
+  <section id="stage" aria-label="宠物互动区域">
+    <div class="sea-line"></div><span class="stage-label">小鲸鱼 · <span id="stateLabel">自在待着</span></span>
+    <div id="petWrap"><div id="bubble" role="status"></div><canvas id="petCanvas" width="480" height="500" aria-label="小鲸鱼，点击摸头，拖动移动，长按打开菜单" tabindex="0"></canvas><span id="effect"></span></div>
+    <button id="restore" hidden>叫她回来</button>
+    <div class="hint">点一下摸头 · 双击一起玩 · 拖动抱起来 · 长按打开菜单</div>
+  </section>
+  <section id="controls">
+    <div class="stats"><label>饱腹 <b id="fullValue"></b><progress id="full" max="100"></progress></label><label>精神 <b id="energyValue"></b><progress id="energy" max="100"></progress></label><label>亲密 <b id="loveValue"></b><progress id="love" max="100"></progress></label></div>
+    <div class="actions"><button data-action="pet">♡ 摸摸头</button><button data-action="feed">喂白米饭</button><button data-action="play">一起玩</button><button data-action="sleep" id="sleepButton">睡一会儿</button></div>
+    <button id="wanderButton" data-action="wander" class="secondary">自主活动：开</button>
+    <p class="note">互动会改变饱腹、精神和亲密度，重新打开会保留状态。此演示在页面内活动；跨应用悬浮使用配套安卓工程。</p>
+  </section>
+  <section id="menu" hidden aria-label="宠物菜单"><button id="menuClose" aria-label="关闭菜单">×</button><h2>陪小鲸鱼一会儿</h2><p id="menuStats"></p><div class="actions"><button data-action="pet">摸摸头</button><button data-action="feed">喂食</button><button data-action="play">玩耍</button><button data-action="sleep">睡觉 / 叫醒</button><button data-action="wander">自主活动 开/关</button><button data-action="chat">和小鲸鱼说话</button><button id="stop">收起宠物</button></div></section>
+  <section id="chat" hidden aria-label="和小鲸鱼说话">
+    <button id="chatClose" aria-label="关闭聊天">×</button>
+    <h2>和小鲸鱼说话</h2>
+    <div id="chatLog" role="log" aria-live="polite"></div>
+    <div id="chatThink" hidden><span class="dot"></span><span class="dot"></span><span class="dot"></span><em id="chatThinkText">正在理解你的话…</em></div>
+    <form id="chatForm" autocomplete="off">
+      <input id="chatInput" type="text" placeholder="说点什么…" enterkeyhint="send" aria-label="要说的话">
+      <button type="submit" id="chatSend">发送</button>
+    </form>
+    <p class="note" id="chatNote">她说的话由本机的 DSH 智能体生成，需要几秒。</p>
+  </section>
+  <footer>离线陪伴 · 与小鲸鱼聊天时才会连本机 DSH（127.0.0.1）</footer>
+</main><script src="brain.js"></script><script src="pet.js"></script></body></html>

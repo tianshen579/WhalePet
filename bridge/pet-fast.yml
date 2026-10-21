@@ -1,0 +1,6 @@
+# 小鲸鱼聊天专用的配置叠加：把推理档位从 max 调低，换取更快的回复。
+- id: agent-default-model
+  config:
+    provider: deepseek-official
+    model: deepseek-flash
+    reasoningEffort: low
