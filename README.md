@@ -39,7 +39,7 @@
 
 ### 直接装 APK
 
-到 [Releases](../../releases) 下载 `WhalePet-*.apk` 安装。首次启动需要授权：
+到 [Releases](https://github.com/tianshen579/WhalePet/releases/latest) 下载 `WhalePet-*.apk` 安装。官方 Release APK 使用项目发布密钥签名，并附 SHA-256 校验文件；AI 聊天仍需单独配置本地消息桥。首次启动需要授权：
 
 1. 安装后打开「小鲸鱼」
 2. 点「允许显示在其他应用上层」，在系统页面授权后返回
